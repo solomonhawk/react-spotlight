@@ -9,7 +9,7 @@ let Home = React.createClass({
 
   render() {
     return (
-      <section>
+      <section className="text-center">
         <h1>Welcome</h1>
         <p>This is an app focus experiment.</p>
         <Link to="call">Join Hangout</Link>

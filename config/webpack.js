@@ -28,7 +28,7 @@ var config = {
   ],
 
   resolve: {
-    extensions: ['', '.js', '.jsx', '.json'],
+    extensions: ['', '.js', '.jsx', '.json', '.sass'],
     modulesDirectories: [ 'web_modules', 'node_modules' ]
   },
 
@@ -43,6 +43,10 @@ var config = {
       {
         test    : /\.json$/,
         loader  : 'json'
+      },
+      {
+        test    : /\.sass$/,
+        loader  : 'style!css!autoprefixer!sass?indentedSyntax'
       }
     ]
   }

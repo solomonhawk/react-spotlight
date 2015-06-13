@@ -3,6 +3,7 @@
  * Pull in the Router and mount it to the DOM at #app.
  */
 
+import styles from '../../app/styles'
 import App    from '../../app'
 import React  from 'react'
 import Router from '../../app/router'
