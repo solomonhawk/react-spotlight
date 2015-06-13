@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Error</title>
+    <meta name="robots" content="noindex">
+    <style>
+      {% include '../../../assets/reveal.css' %}
+    </style>
+  </head>
+  <body>
+    <main>
+      <header>
+        <h1>
+          Ah, the elusive {{ status }} error!
+        </h1>
+      </header>
+      <div>
+        <pre><code>{{ stack }}</code></pre>
+      </div>
+    </main>
+  </body>
+</html>

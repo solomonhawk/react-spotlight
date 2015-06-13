@@ -1,0 +1,67 @@
+{
+  "name": "react-pack",
+  "private": true,
+  "engines": {
+    "node": "~0.10"
+  },
+  "version": "1.0.0",
+  "description": "A React project template based on previous work we have done. This is a work in progress.",
+  "scripts": {
+    "kill": "./bin/kill",
+    "postinstall": "./bin/build",
+    "restart": "./bin/restart",
+    "start": "./bin/start",
+    "stop": "./bin/stop",
+    "test": "NODE_ENV=test karma start config/karma.js --single-run",
+    "test:watch": "NODE_ENV=test karma start config/karma.js"
+  },
+  "keywords": [
+    "flux",
+    "react"
+  ],
+  "author": "Nate Hunzaker",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/vigetlabs/capacitor.git"
+  },
+  "dependencies": {
+    "babel": "~>5.5",
+    "babel-core": "~>5.5",
+    "babel-loader": "~>5.1",
+    "babel-plugin-object-assign": "^1.1.0",
+    "boom": "~2.7",
+    "classnames": "~2.1",
+    "good": "~6.1",
+    "good-console": "~5.0",
+    "hapi": "~8.6",
+    "immutable": "~3.7",
+    "microcosm": "~8.1",
+    "node-env-file": "^0.1.7",
+    "pm2": "~0.12",
+    "react": "~0.13",
+    "react-router": "~0.13",
+    "superagent": "~1.2",
+    "swig": "~1.4",
+    "webpack": "~1.9",
+    "webpack-unassert-loader": "^1.0.0"
+  },
+  "devDependencies": {
+    "babel-runtime": "~5.5",
+    "istanbul": "~0.3",
+    "istanbul-instrumenter-loader": "~0.1",
+    "karma": "~0.12",
+    "karma-chrome-launcher": "~0.1",
+    "karma-cli": "~0.0",
+    "karma-coverage": "~0.3",
+    "karma-mocha": "~0.1",
+    "karma-nyan-reporter": "~0.0",
+    "karma-sinon-chai": "~0.3",
+    "karma-sourcemap-loader": "~0.3",
+    "karma-webpack": "~1.5",
+    "mocha": "~2.2",
+    "object-assign": "~3",
+    "react-hot-loader": "~1.2",
+    "webpack-dev-server": "~1.9"
+  }
+}
