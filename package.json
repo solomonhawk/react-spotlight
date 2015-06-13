@@ -1,11 +1,11 @@
 {
-  "name": "react-pack",
+  "name": "react-focus-experiment",
   "private": true,
   "engines": {
     "node": "~0.10"
   },
   "version": "1.0.0",
-  "description": "A React project template based on previous work we have done. This is a work in progress.",
+  "description": "A React experiment",
   "scripts": {
     "kill": "./bin/kill",
     "postinstall": "./bin/build",
@@ -19,11 +19,11 @@
     "flux",
     "react"
   ],
-  "author": "Nate Hunzaker",
+  "author": "Solomon Hawk",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git://github.com/vigetlabs/capacitor.git"
+    "url": ""
   },
   "dependencies": {
     "babel": "~>5.5",
