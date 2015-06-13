@@ -10,6 +10,7 @@ import Router, { Route, NotFoundRoute } from 'react-router'
 const routes = (
   <Route handler={ require('./components/layout') }>
     <Route name="home" path="/" handler={ require('./components/home') } />
+    <Route name="call" path="/hangout/zx2o874o" handler={ require('./components/call') } />
     <NotFoundRoute handler={ require('./components/404') } />
   </Route>
 )

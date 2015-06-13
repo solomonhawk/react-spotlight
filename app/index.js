@@ -1,5 +1,5 @@
 import Microcosm from 'microcosm'
-import Counter   from './stores/counter'
+import Focus   from './stores/focus'
 
 class App extends Microcosm {
 
@@ -12,7 +12,7 @@ class App extends Microcosm {
     // key of that object.
     //
     // You can fetch this with `app.get('counter')`
-    this.addStore('counter', Counter)
+    this.addStore('focus', Focus)
   }
 }
 

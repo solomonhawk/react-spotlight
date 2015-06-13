@@ -14,7 +14,7 @@ describe('Components - Home', function() {
 
     TestUtils.Simulate.click(React.findDOMNode(component.refs.button))
 
-    app.get('counter').get('count').should.equal(1)
+    app.get('store').get('node').should.equal(null)
   })
 
 })

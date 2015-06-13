@@ -1,5 +1,5 @@
 import App from '../../app'
-import { increaseCount } from '../actions/counter'
+import { setFocus } from '../actions/focus'
 
 describe('App', function() {
   let app = null
@@ -9,13 +9,13 @@ describe('App', function() {
     app.start(done)
   })
 
-  describe('when the increaseCount action is fired', function() {
+  describe('when the setFocus action is fired with null', function() {
     beforeEach(function() {
-      app.push(increaseCount, 1)
+      app.push(setFocus, null)
     })
 
-    it ('should increase the counter by one', function() {
-      app.get('counter').get('count').should.equal(1)
+    it ('should set focus to null', function() {
+      app.get('focus').get('node').should.equal(null)
     })
   })
 
