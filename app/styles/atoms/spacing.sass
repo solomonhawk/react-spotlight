@@ -1,0 +1,24 @@
+.margin-0
+  margin: 0
+
+.margin-bottom-0
+  margin-bottom: 0
+
+.margin-top-unit
+  margin-top: unit()
+
+.margin-bottom-unit
+  margin-bottom: unit()
+
+@for $i from 1 through 20
+  .margin-top-#{$i}
+    margin-top: unit($i)
+
+  .margin-bottom-#{$i}
+    margin-bottom: unit($i)
+
+  .margin-left-#{$i}
+    margin-left: unit($i)
+
+  .margin-right-#{$i}
+    margin-right: unit($i)

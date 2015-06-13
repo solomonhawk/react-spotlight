@@ -1,0 +1,17 @@
+@for $i from 1 through 20
+  .pad-#{$i}
+    padding: unit($i)
+
+// better cascade by separating these to allow the following to override the above
+@for $i from 0 through 20
+  .pad-top-#{$i}
+    padding-top: unit($i)
+
+  .pad-bottom-#{$i}
+    padding-bottom: unit($i)
+
+  .pad-left-#{$i}
+    padding-left: unit($i)
+
+  .pad-right-#{$i}
+    padding-right: unit($i)
