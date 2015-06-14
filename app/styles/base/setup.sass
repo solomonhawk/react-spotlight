@@ -3,6 +3,10 @@
 *:after
   box-sizing: inherit
 
+// focus styles will be controlled by application
+*:focus
+  outline: none !important // FUCK OFF
+
 html,
 body
   box-sizing: border-box
@@ -12,3 +16,15 @@ html
   font-size: 100%
   -webkit-text-size-adjust: 100%
   -ms-text-size-adjust: 100%
+
+html, body, #app
+  width: 100%
+  height: 100%
+  overflow: hidden
+
+#app
+  display: flex
+
+*:focus,
+a:focus img
+  box-shadow: inset 0 0 0 2px red

@@ -43,11 +43,13 @@
     "node-sass": "^3.2.0",
     "pm2": "~0.12",
     "react": "~0.13",
+    "react-ink": "^4.1.0",
     "react-router": "~0.13",
     "sass-loader": "^1.0.2",
     "style-loader": "^0.12.3",
     "superagent": "~1.2",
     "swig": "~1.4",
+    "uid": "0.0.2",
     "webpack": "~1.9",
     "webpack-unassert-loader": "^1.0.0"
   },

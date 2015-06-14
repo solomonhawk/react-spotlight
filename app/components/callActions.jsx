@@ -1,5 +1,4 @@
 import React, { PropTypes } from 'react'
-import { Link } from 'react-router'
 
 let CallActions = React.createClass({
 
@@ -8,12 +7,12 @@ let CallActions = React.createClass({
   render() {
     return (
       <ul className="CallActions">
-        <li key={1}><button>Invite</button></li>
-        <li key={2}><button>Mute</button></li>
-        <li key={3}><button>Hide Camera</button></li>
-        <li key={4}><button>Bandwidth</button></li>
-        <li key={5}><button>Settings</button></li>
-        <li key={6}><Link to="home">Leave Call</Link></li>
+        <li key={1}><button><i className="icon-users"></i></button></li>
+        <li key={2}><button><i className="icon-microphone-off"></i></button></li>
+        <li key={3}><button><i className="icon-camera"></i></button></li>
+        <li key={4}><button><i className="icon-connection-75"></i></button></li>
+        <li key={5}><button><i className="icon-settings"></i></button></li>
+        <li key={6}><button><i className="icon-switch"></i></button></li>
       </ul>
     )
   }

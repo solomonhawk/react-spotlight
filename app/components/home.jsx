@@ -4,12 +4,12 @@ import { Link } from 'react-router'
 let Home = React.createClass({
 
   propTypes: {
-    app   : PropTypes.object.isRequired
+    app: PropTypes.object.isRequired
   },
 
   render() {
     return (
-      <section className="text-center">
+      <section className="fill-space text-center">
         <h1>Welcome</h1>
         <p>This is an app focus experiment.</p>
         <Link to="call">Join Hangout</Link>

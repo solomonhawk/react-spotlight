@@ -1,5 +1,8 @@
 import React  from 'react'
 import Router from 'react-router'
+import FocusManager from './focusManager'
+import Notifications from './notifications'
+import { unSetMessage } from '../actions/message'
 
 let Layout = React.createClass({
 
@@ -24,10 +27,13 @@ let Layout = React.createClass({
   },
 
   render() {
+    let { message } = this.state
+
     return (
-      <main role="main">
+      <FocusManager { ...this.props } component="main" className="flex fill-space" role="main">
+        <Notifications message={ message } onExpire={ unSetMessage } />
         <Router.RouteHandler { ...this.props } { ...this.state } />
-      </main>
+      </FocusManager>
     )
   }
 

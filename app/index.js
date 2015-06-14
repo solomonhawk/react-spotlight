@@ -1,5 +1,6 @@
 import Microcosm from 'microcosm'
-import Focus   from './stores/focus'
+import Focus     from './stores/focus'
+import Message   from './stores/message'
 
 class App extends Microcosm {
 
@@ -13,6 +14,7 @@ class App extends Microcosm {
     //
     // You can fetch this with `app.get('counter')`
     this.addStore('focus', Focus)
+    this.addStore('message', Message)
   }
 }
 

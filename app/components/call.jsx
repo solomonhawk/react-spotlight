@@ -21,13 +21,16 @@ let Call = React.createClass({
     let { app, focus } = this.props
 
     return (
-      <section>
-        <Sidebar />
-        <CallActions />
+      <section className="fill-space">
+        <section className="flex absolute fill-space z">
+          <Sidebar />
+          <div className="flex flex-justify-between flex-column flex-grow">
+            <CallActions />
+            <CallersList />
+          </div>
+        </section>
+
         <VideoContainer />
-        <CallersList />
-        <h1>You're in the call!</h1>
-        <Link to="home">Exit Hangout</Link>
       </section>
     )
   }

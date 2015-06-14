@@ -3,26 +3,30 @@
  */
 
 import Immutable from 'immutable'
-import { setFocus } from '../actions/focus'
+import { setFocusData, focusIntent } from '../actions/focus'
 
 let Focus = {
 
   register() {
     return {
-      [setFocus]: this.setFocus
+      [setFocusData] : this.setFocusData,
+      [focusIntent]  : this.focusIntent
     }
   },
 
   getInitialState() {
-    return Immutable.Map({
-      node: {}
+    return Immutable.fromJS({
+      current    : null,
+      dimensions : {},
+      nodes      : {}
     })
   },
 
-  setFocus(state, node) {
-    return state.set('node', node)
+  setFocusData(state, data) {
+    return state.merge(data)
   }
-
 }
 
 export default Focus
+
+

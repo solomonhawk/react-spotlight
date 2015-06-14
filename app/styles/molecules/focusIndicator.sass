@@ -1,0 +1,15 @@
+.FocusIndicator
+  position: absolute
+  z-index: 1000
+  transition: all .3s $cubic-quart
+  pointer-events: none
+
+  &:after
+    content: ''
+    position: absolute
+    top: -6px
+    left: -6px
+    width: calc(100% + 12px)
+    height: calc(100% + 12px)
+    box-shadow: inset 0 0 0 5px $indicator-color
+    border-radius: 8px

@@ -9,11 +9,11 @@ let Sidebar = React.createClass({
     return (
       <aside className="Sidebar">
         <ul>
-          <li key={1}><Link to="home">Chat</Link></li>
-          <li key={2}><Link to="home">Screen Share</Link></li>
-          <li key={3}><Link to="home">Capture</Link></li>
-          <li key={4}><Link to="home">Slack</Link></li>
-          <li key={5}><Link to="home">. . .</Link></li>
+          <li key={1}><Link to="home"><i className="icon-chat-2"></i></Link></li>
+          <li key={2}><Link to="home"><i className="icon-screen"></i></Link></li>
+          <li key={3}><Link to="home"><i className="icon-camera"></i></Link></li>
+          <li key={4}><Link to="home"><i className="icon-cloud"></i></Link></li>
+          <li key={5}><Link to="home"><i className="icon-lab"></i></Link></li>
         </ul>
       </aside>
     )
